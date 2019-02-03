@@ -7,7 +7,8 @@ function clk() {
     count += 10;
     prog.value = count;
     if (count > 100) {
-        img.src = "img/Karaage_001.jpg"
+        img.src = "img/Karaage_001.jpg";
+        document.getElementById('zyu').play();
     } else {
         img.src = "img/hato.jpg"
     }
@@ -23,5 +24,5 @@ function time() {
 }
 
 onload = function () {
-    setInterval("time()", 20)
+    setInterval("time()", 50)
 };
